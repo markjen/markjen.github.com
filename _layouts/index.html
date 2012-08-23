@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    {% include head.ext %}
+    <title>markjen</title>
+  </head>
+<body>
+
+<div class="wrapper">
+  <header>
+    <h1>markjen</h1>
+  </header>
+
+  <section>
+    <ul class="posts">
+      {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <footer>
+    <div class="contact">
+      Mark Jen<br />
+    </div>
+    <div class="contact">
+      me@markjen.com
+    </div>
+    <div class="contact">
+      <a href="http://github.com/markjen">github.com/markjen</a><br />
+    </div>
+    <div class="contact">
+      <a href="http://twitter.com/markjen">twitter.com/markjen</a>
+    </div>
+  </footer>
+</div>
+
+{% include ga.ext %}
+
+</body>
+</html>

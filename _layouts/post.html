@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    {% include head.ext %}
+    <title>{{ page.title }} | markjen</title>
+  </head>
+<body class="post">
+
+<div class="wrapper">
+  <header>
+    <div class="back"><a href="/">&laquo; back</a></div>
+  </header>
+  <section>
+    {{ content }}
+  </section>
+</div>
+
+{% include ga.ext %}
+
+</body>
+</html>
